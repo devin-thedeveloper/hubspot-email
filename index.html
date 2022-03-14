@@ -11,6 +11,63 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @media only screen and (min-width: 700px) {
+        .personalization-btn_mobile {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .container {
+          width: 100% !important;
+        }
+        .header-logo {
+          width: 350px !important;
+          vertical-align: middle;
+        }
+        .personalization {
+          width: 100%;
+          padding: 0 5% 0 5% !important;
+        }
+        .personalization-btn {
+          display: none;
+        }
+        .top-line {
+          padding: 5px 0 !important;
+        }
+        .trending, .handpicked {
+          text-align: center;
+          margin-top: 20px;
+        }
+        .customer-first_img, .skill-up_img {
+          width: 100% !important;
+          padding-top: 20px;
+        }
+        .customer-first_img-container {
+          text-align: center !important;
+          padding-bottom: 20px;
+        }
+        .skill-up_img {
+          padding-bottom: 20px;
+        }
+        .customer-first_text, .skill-up_text {
+          width: 100% !important;
+          text-align: center;
+        }
+        .customer-first_text p, .skill-up_text p {
+          text-align: center !important;
+        }
+        .inbound-img {
+          max-width: 400px !important;
+        }
+        .inbound-img_container {
+          text-align: center;
+        }
+        .handpicked-article {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body style="margin: 0; font-family: 'Open Sans', sans-serif; color: #2c3f50">
     <!-- Start of email -->
@@ -26,12 +83,11 @@
           <!-- Start of container -->
           <table
             class="container"
-            width="600px"
             align="center"
             border="0"
             cellspacing="0"
             cellpadding="0"
-            style="background-color: white"
+            style="width: 600px; background-color: white"
           >
             <!-- Start of header row -->
             <tr>
@@ -46,14 +102,13 @@
                 >
                   <tr>
                     <td>
-                      <div
-                        style="padding: 5px 20px; background-color: #f68e56"
-                      ></div>
+                      <hr style="height:10px; width:100%; border-width:0; color: #f68e56; background-color:#f68e56; margin: 0;">
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td align="center">
                       <img
+                        class="header-logo"
                         src="img/hubspot_logo-newsletter.png"
                         alt="hubspot logo and newsletter title"
                         style="width: 600px"
@@ -144,6 +199,20 @@
                   <tr>
                     <td align="center" style="padding-top: 30px">
                       <a
+                        class="personalization-btn_mobile"
+                        href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTJ3q2SZV1-WJV7CgB2SW42-L741NCVDkW3D646Y8qf7YZW4lYdTl6nhz75W42L4-Z1yKr5ZW88V5Rc90GcbFVFwXGp6WtlBqW7XCpF05H_cZjW6y9Djs2_7cbYW3XxsWV8NlS63N4qp2bz4FlnvW29zP0x3BfsvjW91dZ7z648ygjVZKGT_7xWJTHW7WS-CW2Tv8NmW8sPKDW42S9Y3W23g0NH4pZ7nVVKxqj322ZN1bW5D7Jjs63m8q-W92qxR01xJl8pW83LHJY67Qf4GW5GG9cK2Qfq93MysXgsjGwvn3dNd1"
+                        style="
+                          background-color: #fe7a58;
+                          padding: 12px 18px;
+                          color: white;
+                          font-weight: 700;
+                          text-decoration: none;
+                          border: none;
+                          border-radius: 5px;
+                        "
+                        >Show me</a
+                      >
+                      <a
                         class="personalization-btn"
                         href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTJ3q2SZV1-WJV7CgB2SW42-L741NCVDkW3D646Y8qf7YZW4lYdTl6nhz75W42L4-Z1yKr5ZW88V5Rc90GcbFVFwXGp6WtlBqW7XCpF05H_cZjW6y9Djs2_7cbYW3XxsWV8NlS63N4qp2bz4FlnvW29zP0x3BfsvjW91dZ7z648ygjVZKGT_7xWJTHW7WS-CW2Tv8NmW8sPKDW42S9Y3W23g0NH4pZ7nVVKxqj322ZN1bW5D7Jjs63m8q-W92qxR01xJl8pW83LHJY67Qf4GW5GG9cK2Qfq93MysXgsjGwvn3dNd1"
                         style="
@@ -177,14 +246,8 @@
                   style="padding: 20px 30px"
                 >
                   <tr>
-                    <td>
-                      <div
-                        style="
-                          margin: 0 auto;
-                          padding: 20px;
-                          border-top: 1px solid #dfe2ea;
-                        "
-                      ></div>
+                    <td style="padding-bottom: 15px;">
+                      <hr style="height:1px; width:95%; border-width:0; color: #dfe2ea; background-color:#dfe2ea;">
                     </td>
                   </tr>
                   <tr>
@@ -221,25 +284,51 @@
                         style="color: #23496d;"
                       >
                         <tr>
-                          <td style="width: 50%; text-align: center;">
-                            <img
-                              src="img/hubspot_customer-first.png"
-                              alt=""
-                              style="width: 245px"
-                            />
-                          </td>
-                          <td style="width: 50%; padding: 10px 20px 0;">
-                            <p style="text-align: left; line-height: 125%; font-weight: bold; font-size: 18px;">
-                              Fostering a Customer-first Marketing Plan
-                            </p>
-                            <p style="line-height: 150%;">
-                              Personalization. Automation. Analysis. Attribution.
-                              Reflection.<br> Five very important factors in creating a
-                              well-oiled marketing machine. Our latest audiocast
-                              guest-starring Troy Arias from Loom breaks down <a href="#" style="color:#00a4bd;">the
-                              essential tools needed in a marketer’s tech stack →</a>
-                            </p> 
-                            </p>
+                          <td>
+                            <table
+                              class="customer-first_img"
+                              align="left"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              width="50%"
+                              style="vertical-align: middle;"
+                            >
+                              <tr>
+                                <td class="customer-first_img-container" style="text-align: left;">
+                                  <img
+                                    src="img/hubspot_customer-first.png"
+                                    alt=""
+                                    style="width: 245px; padding-left: 10px;"
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              class="customer-first_text"
+                              align="center"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              width="50%"
+                              style="vertical-align: middle;"
+                            >
+                              <tr>
+                                <td>
+                                  <p style="text-align: left; line-height: 125%; font-weight: bold; font-size: 18px; margin-top: 0;">
+                                    Fostering a Customer-first Marketing Plan
+                                  </p>
+                                  <p style="line-height: 150%;">
+                                    Personalization. Automation. Analysis. Attribution.
+                                    Reflection.<br> Five very important factors in creating a
+                                    well-oiled marketing machine. Our latest audiocast
+                                    guest-starring Troy Arias from Loom breaks down <a href="#" style="color:#00a4bd;">the
+                                    essential tools needed in a marketer’s tech stack →</a>
+                                  </p> 
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
@@ -253,24 +342,48 @@
                         border="0"
                         cellspacing="0"
                         cellpadding="0"
-                        style="color: #23496d;"
+                        style="color: #23496d; padding-top: 40px;"
                       >
                         <tr>
-                          <td style="width: 50%; padding: 10px 20px 0;">
-                            <p style="text-align: left; line-height: 125%; font-weight: bold; font-size: 18px;">
-                              Why Marketing Needs to Stop Ignoring Personalization
-                            </p>
-                            <p style="line-height: 150%;">
-                              Searching for the perfect way to create a more natural connection with your audience? We’ve got one word for you — and that’s personalization. Personalization is gaining more and more ground in the digital space, so Skill Up is here to tell you <a href="#" style="color:#00a4bd;">why and how to get on board →</a>
-                            </p> 
-                            </p>
-                          </td>
-                          <td style="width: 50%; text-align: center;">
-                            <img
-                              src="img/hubspot_skill-up.jpeg"
-                              alt=""
-                              style="width: 245px"
-                            />
+                          <td>
+                            <table
+                              class="skill-up_img"
+                              align="right"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              width="50%"
+                            >
+                              <tr>
+                                <td style="text-align: center;">
+                                  <img
+                                    src="img/hubspot_skill-up.jpeg"
+                                    alt=""
+                                    style="width: 245px"
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                              class="skill-up_text"
+                              align="center"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              width="50%"
+                            >
+                              <tr>
+                                <td style="padding: 0 20px 0;">
+                                  <p style="text-align: left; line-height: 125%; font-weight: bold; font-size: 18px; margin-top: 0;">
+                                    Why Marketing Needs to Stop Ignoring Personalization
+                                  </p>
+                                  <p style="line-height: 150%;">
+                                    Searching for the perfect way to create a more natural connection with your audience? We’ve got one word for you — and that’s personalization. Personalization is gaining more and more ground in the digital space, so Skill Up is here to tell you <a href="#" style="color:#00a4bd;">why and how to get on board →</a>
+                                  </p> 
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
@@ -293,15 +406,8 @@
                   style="padding: 20px 15px"
                 >
                   <tr>
-                    <td>
-                      <div
-                        style="
-                          margin: 0 auto;
-                          padding: 20px;
-                          border-top: 1px solid #dfe2ea;
-                          width: 85%;
-                        "
-                      ></div>
+                    <td style="padding-bottom: 15px;">
+                      <hr style="height:1px; width:95%; border-width:0; color: #dfe2ea; background-color:#dfe2ea;">
                     </td>
                   </tr>
                   <tr>
@@ -321,8 +427,8 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <img src="img/hubspot_inbound.png" alt="inbound 22 promotion image" style="max-width: 100%; vertical-align: middle;">
+                    <td class="inbound-img_container">
+                      <img class="inbound-img" src="img/hubspot_inbound.png" alt="inbound 22 promotion image" style="max-width: 100%; vertical-align: middle;">
                     </td>
                   </tr>
                   <tr>
@@ -364,14 +470,8 @@
                   style="padding: 20px 30px"
                 >
                   <tr>
-                    <td>
-                      <div
-                        style="
-                          margin: 0 auto;
-                          padding: 20px;
-                          border-top: 1px solid #dfe2ea;
-                        "
-                      ></div>
+                    <td style="padding-bottom: 15px;">
+                      <hr style="height:1px; width:95%; border-width:0; color: #dfe2ea; background-color:#dfe2ea;">
                     </td>
                   </tr>
                   <tr>
@@ -406,23 +506,43 @@
                         cellspacing="0"
                         cellpadding="0"
                         width="100%"
-                        style="padding: 0 20px"
                       >
                         <tr>
                           <td>
-                            <a href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfT55nClyV3Zsc37CgLbyW60Lyj975_XX_W7LGgm45Dw8-JW2pzxPP5C7KLSW7MSw588m7y-zW3jxSCr80SmBdW4ZVXNK6yKDTRW8c4W3F5BW9bZW4BNwR-4QsCzJW2bWkGp6FM2mjW4wf67C5jlT7mW6_dQ1n7ffC1ZW8x-FVY8lGk2hN5dtk5KRQtLTN4N3lT1nJZ0FW89nXHd3Wk6DxW4LXXQz5Ck1x-W8_PtNh29z2G7W46gCKd5n9nK0VtBkzj6DNvxSVPmT8p73YqJnW54y1pz3HCQLLW5lGzrZ8Srj9fW3-vWFZ8hnRcTMVP3PMynqrDW1GlCPc2ZDXhCW3VLFbd25rTksN5qSBFkFyg-_N128hydxQV4SW6FjWxm5H09t6W12y82Y5N42CFVKL-9j83mk1xW9dnMjZ6N_JbNW5cTSN37TzKJRW1ltBy68w6gzx36ND1">
-                              <img src="img/hubspot_5-steps.png" alt="5 steps to create outstanding marketing article image">
-                            </a>
-                          </td>
-                          <td>
-                            <a href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfT55nClyV3Zsc37CgD4FW89l4KQ4wrYPkVF_r3k6zbHglW6Cmtf_1D4fnzW7QVyyQ2d2qJlW3wJxvQ7jxnD5W1S87wM97_Cy2W1qJVPN6f1RprW2D_qbf9fkGjSVZqRhS6cCNfnW1KPZW13y6j7FW2C3w5P2CLztqW8SXfP18-LQhmW8R9V8d4b24JcN8Pk-HjJ78NcW7yCT7y7Qcb1VW7gMlSn2c76FXW30PDpm4gqhJ4W4NSpX411gTGKW6krmZf2z6xJWW1brbbb2kzCZ-W2hwZ1Z1rSgvNW8YdYHC3SbMVCW20CTmN2l4kh9W7K83mD3kzPlPW3YkjpD8Xcv9fW3KG1TB4XW20qW3HSm2j9cS41cW1w2nzQ6VDthqVvBkM17Yq4h6W3YFbnc5FQ15TW382wsZ5GtYlkW3fFN2t39HDppW4Sf60T55z1pGW5-15R573ks9x368Y1">
-                              <img src="img/hubspot_13-subjects.png" alt="13 subject line tester tools article image">
-                            </a>
-                          </td>
-                          <td>
-                            <a href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfT55nClyV3Zsc37CgSlWW8XZGgf6KSXbMW8dG4C46KpsdMW2Ww1rP1j-JL5W5Trqx85pl1ghW3ktC0w5mrQyfW3Rp0Lh7Kl5W-W7pC8Qw6CyDCgW4jj1FP6-ff3lW1M5LCx8ssGGjW4TbPhJ8WrqPtW7ylkj-198jd9W1qR7vB1WsHtVW2B2GBV85PlTkW4NzM3g1pmBnxN1dNmnHZF3xJW5wYkLf4SkXkYW4bLH9Q3V1vrtVrrDnH1QCmbKW29Ndch671-3DW4kvsR-5-ZggVW1FTxph37jwLwW1j6jll8H9TMPN6Kprjm2TyGHN4RyNYN8YF5jW6bZn-L4M75BCW3FjwqH89Nb4cW6H3nFP5bTp30W6ngxnN35fK6yW4vZ4wk3t432dW1q4XS_324fFhW43vwG01sbgzXW19D8N12B984PW1gCmZJ3F2ZkVW8RBb0X3fcjcZ3d_s1">
-                              <img src="img/hubspot_12-reasons.png" alt="12 top reasons to get a customer support job article image">
-                            </a>
+                            <table
+                              class="handpicked-article"
+                              align="left"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              width="50%"
+                              style="margin: 0;"
+                            >
+                              <tr>
+                                <td align="center">
+                                  <a href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfT55nClyV3Zsc37CgLbyW60Lyj975_XX_W7LGgm45Dw8-JW2pzxPP5C7KLSW7MSw588m7y-zW3jxSCr80SmBdW4ZVXNK6yKDTRW8c4W3F5BW9bZW4BNwR-4QsCzJW2bWkGp6FM2mjW4wf67C5jlT7mW6_dQ1n7ffC1ZW8x-FVY8lGk2hN5dtk5KRQtLTN4N3lT1nJZ0FW89nXHd3Wk6DxW4LXXQz5Ck1x-W8_PtNh29z2G7W46gCKd5n9nK0VtBkzj6DNvxSVPmT8p73YqJnW54y1pz3HCQLLW5lGzrZ8Srj9fW3-vWFZ8hnRcTMVP3PMynqrDW1GlCPc2ZDXhCW3VLFbd25rTksN5qSBFkFyg-_N128hydxQV4SW6FjWxm5H09t6W12y82Y5N42CFVKL-9j83mk1xW9dnMjZ6N_JbNW5cTSN37TzKJRW1ltBy68w6gzx36ND1">
+                                    <img src="img/hubspot_5-steps.png" alt="5 steps to create outstanding marketing article image">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                            <table
+                            class="handpicked-article"
+                            align="center"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            width="50%"
+                            style="margin: 0;"
+                            >
+                              <tr>
+                                <td align="center">
+                                  <a href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfT55nClyV3Zsc37CgD4FW89l4KQ4wrYPkVF_r3k6zbHglW6Cmtf_1D4fnzW7QVyyQ2d2qJlW3wJxvQ7jxnD5W1S87wM97_Cy2W1qJVPN6f1RprW2D_qbf9fkGjSVZqRhS6cCNfnW1KPZW13y6j7FW2C3w5P2CLztqW8SXfP18-LQhmW8R9V8d4b24JcN8Pk-HjJ78NcW7yCT7y7Qcb1VW7gMlSn2c76FXW30PDpm4gqhJ4W4NSpX411gTGKW6krmZf2z6xJWW1brbbb2kzCZ-W2hwZ1Z1rSgvNW8YdYHC3SbMVCW20CTmN2l4kh9W7K83mD3kzPlPW3YkjpD8Xcv9fW3KG1TB4XW20qW3HSm2j9cS41cW1w2nzQ6VDthqVvBkM17Yq4h6W3YFbnc5FQ15TW382wsZ5GtYlkW3fFN2t39HDppW4Sf60T55z1pGW5-15R573ks9x368Y1">
+                                    <img src="img/hubspot_13-subjects.png" alt="13 subject line tester tools article image">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
@@ -450,7 +570,7 @@
                     </td>
                   </tr>
                   <tr align="center">
-                    <td style="padding: 15px 0;">
+                    <td style="padding: 15px 0 5px 0;">
                       <table>
                         <tr>
                           <td style="padding: 0 5px;">
@@ -483,7 +603,37 @@
                     </td>
                   </tr>
                   <tr>
-                    <p style="display: block; font-size: 12px;"></p>
+                    <td align="center" style="text-align: center; color: #fff;">
+                      <p style="display: block; font-size: 12px; line-height: 125%;">
+                      <a style="color: #fff;" href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTp3q2SGV1-WJV7CgLwqW6L7T1N6r3B3GW85wKXk19Z0w-W1wZ2hj2rNQv6W1gWFYN8g-m-fW4CFCS05Vq6h_W2yV4hw8KYj8nVlbvHQ58SwPfV5fTR-4HcXlyW7Ry4ks7H2gj1W1GhT2K4x_ryYN6F5vbq1L4yyV5hPQn2ZRSRnN46JvKnwYtS6W4PpBb41flQlBVp60Dn5nGzqXW8rZwxR3vYb8FW5V-tr-2pVPvtW6NYf0937WsHsW266m7N5dFC9rW4jQ30B4dqyGW3kVB1">Update language</a>
+                       | 
+                       <a style="color: #fff;" href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTp3q2SGV1-WJV7CgLFJW1wdpCP8kgKc_W4vGBkb5Yf5wnW2zgJ9n3lLTD5V8nXCr7Y05p_W4kj-qx7fLF6MW26TmHf6FJpcrW5SZTdT50CZWrW49lRGV7Y_qgrW36GQC25VdZC4W8mXy5s28Vf-pW3vVyhw3rjX-kW14WRSv6jVQCbW6s1gsw6p_x_8W4vdJ8354tQ0sW7rnZLv9gXHy0W6V3lFT8HBxM0W6wYPc456TF9xN1fg-kSNy6qlW2MByMD5RBClVW7WZJVT8S0NpZ36R91">Actualiza el idioma</a>
+                       | 
+                       <a style="color: #fff;" href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTp3q2SGV1-WJV7CgS0BW6kZ1335qPxF9N16sRZh4F4p8W4pNp5g5qByNSN5KKpmH_y1g4W1ShFlf9khPqNW2_B9cr4fWsyBW3L3ljB6vnWFMW2R9F6n3v-R7yW1lZY8P3Jy2JlV-5l7r5Ln3Z2N4mmsFb-K_5cVcP3TH2dh9gCW7KM_5X1TT26nW6w1VR46YSFrMW7lPxPY96VmCKW7jGgW15h0N-NW3wZTyD8XJgnrW21rPmy775SvwW7Zd4Py3S-t5jW4HFDb_17Ttry3nhK1">Changer la langue</a>
+                      </p>
+                      <p style="display: block; font-size: 12px; line-height: 125%;">
+                      <a style="color: #fff;" href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTp3q2SGV1-WJV7CgKctN5GTCb_BZt9jN7LYtRYr9zyTW8B75TR5tWqxbW2fRN9f8SxRNMW1MFyRj3SzdJcW6rl9Cd1p0rgDW72X_cV3WfYz4W24PK013TDvGPW3rBR7b1P8P3zVWSNdb7MVl6vW3F6XK169tqQVN98ww_rzPbM0W4BKh0W7-3jNSN79l2G4Nk9q3N6fSpqRgSGVyVqB2sF3rjYP0W2tlvsc4xBt_0W3RwJ7399jmR5W7_G_SL2kzcG5W5NwY2G6K62-W3mKb1">Sprache ändern</a>
+                       | 
+                       <a style="color: #fff;" href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTp3q2SGV1-WJV7CgzZJN7k1hhhh1WFwW7xt2kc7NnYZ5W4ZsrSl7LpCtwW2M7YQ-62f4y0W1BSqJq5ZWfCzW2NHtWt42h97KW8SfbsV3qNcGYW1zKVQ793hTqnW3CHKX46FS3-NW2KqxlY67-4PxVXtlCG4YPF3mW46f9m04jfGZBN2bW1cmq6k10LG-t5YV-fbW2HczTQ63VMkbW1G_mrH302YCSW5pPR0Q69mgg3W5sxHnq3ZrJWlW7tmqdg7PG0k7W6Df-Gs7z_mTN362K1">Atualize idioma</a>
+                       | 
+                       <a style="color: #fff;" href="https://www.hubspot.com/e3t/Btc/41+113/8-04/VX5SHd49JwmQW5Z6gWF7hwbKhW5GRJ1L4FVxvXMGxfTp3q2SGV1-WJV7CgGNMW200F1z7nCxVrW3LLgcb3NpVD1W1SBgHh7BXBJBW1bf_g284kr6VW4vKVx52QBFH8W4qd3RQ3n2wjMW1Fq1PG4Pv7RRW4Kqr763wC6r6N1VBSSz8k5d5MWwDRHbD0-2W8G58gf4gGc0TW2J50MV1mkyTzW2DPtJX83qp97W1yxmWx6Z_-xVW74Gvw64Zb09YVzrvlH5YYhyJW97zPC17zQHxfW3ZLFKG43Hf8BW2nHsnq5drZcFW47GF7Z273vFp39q11">受信言語を更新する</a>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="font-size: 12px; color: #fff;">
+                        HubSpot, 25 1st St., Cambridge, MA 02141, USA, 888-482-7768
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="display: block; font-size: 12px; line-height: 125%; margin: 0; padding-bottom: 30px;">
+                        <a style="color: #fff;" href="#">Unsubscribe</a>
+                        <a style="color: #fff;" href="#">Manage preferences</a>
+                      </p>
+                    </td>
                   </tr>
                 </table>
               </td>
